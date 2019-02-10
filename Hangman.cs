@@ -50,7 +50,8 @@ static void Main () {
   string used = "";
 
   //This variable represents the word that the user is guessing.
-  string word = "dictionary";
+  Console.Write("Word: ");
+  string word = Console.ReadLine().ToLower();
 
   //This variable represents the set of blanks that represent the word.
   string blanks = new String('_', word.Length);
@@ -61,6 +62,8 @@ static void Main () {
   //This makes sure that everything is lowercase.
   word = word.ToLower();
 
+  Console.Clear();
+  
   /*
   In our main loop, we make sure that
   the word hasn't been guessed, and
@@ -68,6 +71,7 @@ static void Main () {
   If they have, the loop closes and tells
   the user if they have won or lost.
   */
+  
   while (blanks.Contains("_") && (tries > 0)){
 
     //Here we output game info to the user.
@@ -79,6 +83,8 @@ static void Main () {
     //We also make sure that the input is lowercase.
     Console.Write("Letter: ");
     string guess = Console.ReadLine().ToLower();
+	
+	Console.Clear();
 
     /*
     If the "used" variable (where we store used characters)
@@ -121,7 +127,7 @@ static void Main () {
       used += (guess + " ");
 
     }
-
+	
   }
 
  //Here, the loop has closed and we must make sure the word has been guessed or not.
