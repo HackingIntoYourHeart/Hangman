@@ -50,7 +50,7 @@ static void Main () {
   string used = "";
 
   //This variable represents the word that the user is guessing.
-  string word = "FUCK";
+  string word = "dictionary";
 
   //This variable represents the set of blanks that represent the word.
   string blanks = new String('_', word.Length);
