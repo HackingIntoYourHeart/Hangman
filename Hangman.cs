@@ -144,6 +144,8 @@ static void Main () {
    Console.WriteLine("YOU WIN ! ! !\n");
 
  }
+ 
+ Console.Read();
 
 }
 
